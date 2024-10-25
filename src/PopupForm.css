@@ -1,0 +1,52 @@
+/* Popup container */
+.form-popup {
+  
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #363535;
+    border-radius: 5px;
+    z-index: 9;
+    background-color: #2d2e2d;
+    color: #9c9e9c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* Popup form */
+.form-container {
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Full-width buttons inside the popup */
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #346435;
+    color: white;
+    cursor: pointer;
+}
+.resetbtn{
+    width: 100px;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #404140;
+    color: rgb(161, 158, 158);
+    cursor: pointer;
+}
+/* Add a red background color to the cancel button */
+.cancel {
+    background-color: #4b4948;
+}
+
+/* Add some hover effects to buttons */
+.btn:hover, .cancel:hover {
+    opacity: 0.8;
+}
