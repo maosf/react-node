@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import RoomTemp from "./RoomTemp";
-//import TempAdjust from "./TempAdjust";
+import TempCard from "./TempCard";
 //import PopupForm from "./PopupForm";
 function App() {
   const [data, setData] = useState(null);
@@ -69,7 +69,11 @@ function App() {
   if (error) return <div>Error: {error} </div>;
   return (
     <div className="App">
-      <RoomTemp data={data} onAdjust={adjustTemp} />
+      <TempCard />
+      <TempCard />
+      <TempCard />
+      <TempCard />
+      {/* <RoomTemp data={data} onAdjust={adjustTemp} /> */}
     </div>
   );
 }

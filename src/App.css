@@ -1,7 +1,13 @@
 .App {
+  
   text-align: center;
   background-color: black;
   color: white;
+  
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+  /* grid-template-columns: 1fr 1fr 1fr; */ 
 }
 
 .App-logo {
