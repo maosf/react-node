@@ -5,13 +5,13 @@ function RoomTemp({ data, onAdjust }) {
   const items = Object.entries(data);
 
   return (
-    <div className="container">
+    <div className="room-container">
       <ul>
         <h3>The room temperature</h3>
         {items.map(([key, value]) => (
           <li
-            className="card"
             key={key}
+            className="room-card"
             style={{
               color:
                 value > 26
@@ -23,10 +23,7 @@ function RoomTemp({ data, onAdjust }) {
                   : "lightgreen",
             }}
           >
-            <p className="room">
-              Room {key} --- Temp is : {value} C
-            </p>
-
+            Room {key} --- Temp is : {value} C
             <PopupForm room={key} temp={value} onAdjust={onAdjust} />
             {/* <input type='number' value={value} onChange={(e)=>} */}
           </li>
